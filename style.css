@@ -1,1 +1,12 @@
 html,
+
+body {
+    background-color: rgb(72, 83, 82);
+}
+
+h1 {
+    color: rgb(241, 233, 223);
+    text-align:center ;
+    margin: 2rem;
+}
+
