@@ -4,6 +4,8 @@ body {
     background-color: rgb(72, 104, 87);
 }
 
+
+
 #title {
     color: rgb(241, 233, 223);
     text-align:center ;
@@ -17,8 +19,9 @@ body {
     margin: 1rem;
 }
 
-#InsertBirthYear {
+#box {
     text-align: center;
     margin: 1rem;
     color: rgb(209, 201, 192);
+    background-color: rgb(72, 104, 87)
 }
