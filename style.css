@@ -1,12 +1,24 @@
 html,
 
 body {
-    background-color: rgb(72, 83, 82);
+    background-color: rgb(72, 104, 87);
 }
 
-h1 {
+#title {
     color: rgb(241, 233, 223);
     text-align:center ;
     margin: 2rem;
+    font-size: 1.7rem;
 }
 
+#buttons {
+    color: brown;
+    text-align: center;
+    margin: 1rem;
+}
+
+#InsertBirthYear {
+    text-align: center;
+    margin: 1rem;
+    color: rgb(209, 201, 192);
+}
