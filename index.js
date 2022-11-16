@@ -8,15 +8,7 @@ const DOMSelectors = {
    button: document.querySelector(".btn"),
 }
 
-function ageCalc(year) {
-   const currentYear = 2022;
-   let input = year;
-   return age = currentYear - input
-}
-
-function ageClear(){
-   DOMSelectors.ageYear.value = ""
-}
+function
 
 DOMSelectors.calculate.addEventListener("click", function () {
    let age = ageCalc(DOMSelectors.ageYear.value);

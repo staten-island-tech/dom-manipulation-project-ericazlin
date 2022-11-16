@@ -1,6 +1,9 @@
 html,
-
 body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 62.5%;
     background-color: rgb(72, 104, 87);
 }
 
@@ -10,18 +13,20 @@ body {
     color: rgb(241, 233, 223);
     text-align:center ;
     margin: 2rem;
-    font-size: 1.7rem;
+    font-size: 3rem;
 }
 
 #buttons {
     color: brown;
     text-align: center;
     margin: 1rem;
+    background-color: rgb(72, 104, 87);
 }
 
 #box {
     text-align: center;
     margin: 1rem;
     color: rgb(209, 201, 192);
-    background-color: rgb(72, 104, 87)
+    background-color: rgb(72, 104, 87);
+    font-size: 2rem;
 }
