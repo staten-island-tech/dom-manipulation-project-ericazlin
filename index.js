@@ -8,14 +8,12 @@ const DOMSelectors = {
    button: document.querySelector(".btn"),
 }
 
-function
-
-DOMSelectors.calculate.addEventListener("click", function () {
-   let age = ageCalc(DOMSelectors.ageYear.value);
-   DOMSelectors.box.insertAdjacentHTML("beforeend", `<p>You are ${age} years old!</p>`)
-})
-
-DOMSelectors.clear.addEventListener("click", function () {
-   ageClear();
-})
-
+ function text(text) {
+   text.textContent = "enjoy your custom album creation! 
+ }
+ DOMSelectors.button.addEventListener("click", function () {
+   text(DOMSelectors.text);
+ });
+ function name() {
+   DOMSelectors.getElementById("inputid") ;
+ }
