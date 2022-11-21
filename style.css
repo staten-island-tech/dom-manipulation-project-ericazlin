@@ -30,3 +30,20 @@ body {
     background-color: rgb(72, 104, 87);
     font-size: 2rem;
 }
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(241, 233, 223);
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(241, 233, 223);
+}
+
+img {
+    margin: auto;
+    display: block;
+}
