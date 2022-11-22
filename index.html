@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,42 +8,50 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 </head>
-<body>
 
 <body>
-    <div id="title">
-        <h1> Create a Custom Music Album! <h1>
-        <h2> Insert Below </h2>
-    </div>
 
-    <div id="box"> 
-        <label for="name">Album Name</label>
-        <input type="text" class="input" id="albumName" name="name"><br><br>
+    <body>
+        <div id="title">
+            <h1> Create a Custom Music Album! <h1>
+                    <h2> Insert Below </h2>
+        </div>
 
-        <label for="name">Album Cover</label>
-        <input type="text" class="input" id="imageLink" name="image"><br><br>
+        <div id="everything">
+            <div id="box">
+                <label for="name">Album Name</label>
+                <input type="text" class="input" id="albumName" name="name"><br><br>
 
-        <label for="name">Artist Name</label>
-        <input type="text" class="input" id="artistName" name="artist"><br><br>
+                <label for="name">Album Cover (link)</label>
+                <input type="text" class="input" id="imageLink" name="image"><br><br>
 
-        <label for="name">Title Track</label>
-        <input type="text" class="input" id="titleTrack" name="title"><br><br>
+                <label for="name">Artist Name</label>
+                <input type="text" class="input" id="artistName" name="artist"><br><br>
 
-        <label for="name">Year of Release</label>
-        <input type="text" class="input" id="releaseYear" name="year"><br><br>
-    </div>
+                <label for="name">Title Track</label>
+                <input type="text" class="input" id="titleTrack" name="title"><br><br>
 
-    <div id="albumsCollection">
+                <label for="name">Year of Release</label>
+                <input type="text" class="input" id="releaseYear" name="year"><br><br>
+            </div>
 
-    </div>
 
-    <div id="buttons">
-        <button type="button" class="btn" id="btnCreate">Create</button>
-        <button type="button" class="btn" id="btnClear">Clear</button>
-    </div>
 
-    <script src="index.js" ></script>
-</body>
+            
+
+            <div id="albumsCollection">
+
+            </div>
+        </div>
+
+        <div id="buttons">
+            <button type="button" class="btn" id="btnCreate">Create</button>
+            <button type="button" class="btn" id="btnClear">Clear</button>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+
 </html>

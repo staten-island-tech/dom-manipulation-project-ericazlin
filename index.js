@@ -36,16 +36,16 @@ DOMSelectors.create.addEventListener("click", function () {
    let year = DOMSelectors.releaseYear.value;
    let image = DOMSelectors.imageLink.value;
 
-   buttonPress++
+   /* buttonPress++
    albumVersion = `albums${buttonPress}`
-
+ */
    
    DOMSelectors.albums.insertAdjacentHTML("beforeend",
    `
-   <div id="${albumVersion}">  
+   <div id="albums">  
    <img src="${image}" alt=""> 
-   <h1>${name} - ${artist}<h1>
-   <h1>${title} - ${year}<h1>
+   <h3>${name} - ${artist}<h3>
+   <h4>${title} - ${year}<h4>
    </div>
    `
    )
