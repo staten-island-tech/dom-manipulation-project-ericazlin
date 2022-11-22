@@ -10,7 +10,7 @@ const DOMSelectors = {
    imageLink: document.getElementById("imageLink"),
    albumName: document.querySelector("#albumName"),
    button: document.querySelector(".btn"),
-   albums: document.getElementById("albums"),
+   albums: document.querySelector("#albumsCollection"),
 }
 
 const inputFields = [
@@ -27,6 +27,8 @@ function inputClear() {
    });
 }
 
+let buttonPress = 0
+
 DOMSelectors.create.addEventListener("click", function () {
    let name = DOMSelectors.albumName.value;
    let artist = DOMSelectors.artistName.value;
@@ -34,22 +36,24 @@ DOMSelectors.create.addEventListener("click", function () {
    let year = DOMSelectors.releaseYear.value;
    let image = DOMSelectors.imageLink.value;
 
-   DOMSelectors.box.insertAdjacentHTML("afterend", `
-   <div id="albums">    
-   </div>
-   `)
+   buttonPress++
+   albumVersion = `albums${buttonPress}`
 
-   albums.insertAdjacentHTML("beforeend",
-   `<img src="${image}" alt=""> 
+   
+   DOMSelectors.albums.insertAdjacentHTML("beforeend",
+   `
+   <div id="${albumVersion}">  
+   <img src="${image}" alt=""> 
    <h1>${name} - ${artist}<h1>
-   <h1>${title} - ${year}<h1> 
+   <h1>${title} - ${year}<h1>
+   </div>
    `
    )
 
+   inputClear();
 })
 
 DOMSelectors.clear.addEventListener("click", function () {
-   inputClear();
-   albums.remove();
+   DOMSelectors.albums.innerHTML = '';
 })
 
