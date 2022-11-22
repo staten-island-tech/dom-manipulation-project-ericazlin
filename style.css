@@ -5,6 +5,7 @@ body {
     box-sizing: border-box;
     font-size: 62.5%;
     background-color: rgb(72, 104, 87);
+    font-family: 'Space Mono', monospace;
 }
 
 h2 {
@@ -16,6 +17,7 @@ h2 {
     text-align:center ;
     margin: 2rem;
     font-size: 3rem;
+    font-family: 'Space Mono', monospace;
 }
 
 #buttons {
