@@ -9,12 +9,12 @@ body {
 }
 
 #title {
-    color: rgb(241, 233, 223);
+    color: rgb(255, 255, 255);
     text-align:center ;
     margin: 2rem 5rem;
     font-size: 3rem;
     font-family: 'Space Mono', monospace;
-    border: dotted gray 0.5rem;
+    border: solid rgb(209, 201, 192) 1rem;
 }
 
 #buttons {
@@ -23,20 +23,22 @@ body {
     margin-left: 14vw;
     margin-bottom: 5rem;
     background-color: rgb(72, 104, 87);
+    
 }
 
 #box {
     margin: 1rem;
-    margin-left: 3rem;
+    margin-left: 5rem;
     color: rgb(209, 201, 192);
     background-color: rgb(72, 104, 87);
     font-size: 2rem;
-    border: solid black 1rem;
+    border: solid rgb(209, 201, 192) 1rem;
     width: 24vw;
     height: 60vh;
     padding: 2rem;
     justify-content: center;
     box-sizing: content-box;
+    border-radius: 5%;
 }
 
 #albumsCollection {
@@ -50,9 +52,10 @@ body {
 }
 
 #albums {
-    border: solid black 0.5rem;
+    border: solid rgb(255, 255, 255) 1rem;
     margin: 0.5rem;
     width: 22.5vw;
+    border-radius: 5%;
 }
 
 h1 {
@@ -95,5 +98,13 @@ img {
     margin: 1rem;
     display: block;
     width: 21vw;
-    border: dotted gray 0.5rem;
+    /*border: solid rgb(224, 217, 204) 0.8rem; */
+}
+
+#title:hover {
+    transition: 2s;
+    background-color: rgb(72, 104, 87);
+    border-color:rgb(72, 104, 87);
+    transform: scale(1.25rem) ;
+    color: rgb(209, 201, 192)
 }
