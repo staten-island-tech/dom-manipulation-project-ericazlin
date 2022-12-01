@@ -11,6 +11,8 @@ const DOMSelectors = {
    albumName: document.querySelector("#albumName"),
    button: document.querySelector(".btn"),
    albums: document.querySelector("#albumsCollection"),
+   delete: document.getElementById("btnDelete"),
+   divDelete: document.getElementById("deleteButton"),
 }
 
 const inputFields = [
@@ -27,15 +29,18 @@ function inputClear() {
    });
 }
 
-let buttonPress = 0
+
+
+/* let buttonPress = 0 */
 
 DOMSelectors.create.addEventListener("click", function () {
-   let name = DOMSelectors.albumName.value;
-   let artist = DOMSelectors.artistName.value;
-   let title = DOMSelectors.titleTrack.value;
-   let year = DOMSelectors.releaseYear.value;
-   let image = DOMSelectors.imageLink.value;
-
+   const values = {
+   name: DOMSelectors.albumName.value,
+   artist: DOMSelectors.artistName.value,
+   title: DOMSelectors.titleTrack.value,
+   year: DOMSelectors.releaseYear.value,
+   image: DOMSelectors.imageLink.value,
+   }
    /* buttonPress++
    albumVersion = `albums${buttonPress}`
  */
@@ -43,15 +48,28 @@ DOMSelectors.create.addEventListener("click", function () {
    DOMSelectors.albums.insertAdjacentHTML("beforeend",
    `
    <div id="albums">  
-   <img src="${image}" alt=""> 
-   <h3>${name} - ${artist}<h3>
-   <h4>${title} - ${year}<h4>
+   <img src="${values.image}" alt=""> 
+   <h3>${values.name} - ${values.artist}<h3>
+   <h4>${values.title} - ${values.year}</h4>
+   <button type="button" class="btn" id="btnDelete">Delete</button>
    </div>
    `
    )
 
+   function deleteAlbum() {
+      let deleteButton = document.querySelectorAll("#btnDelete")
+      deleteButton.forEach((button) => {
+        button.addEventListener("click", (event) => {
+          event.target.parentElement.remove();
+        });
+      });
+    }
+
    inputClear();
+   deleteAlbum();
 })
+
+
 
 DOMSelectors.clear.addEventListener("click", function () {
    DOMSelectors.albums.innerHTML = '';
