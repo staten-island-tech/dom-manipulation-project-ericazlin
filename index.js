@@ -29,8 +29,6 @@ function inputClear() {
    });
 }
 
-
-
 /* let buttonPress = 0 */
 
 DOMSelectors.create.addEventListener("click", function () {
@@ -50,7 +48,8 @@ DOMSelectors.create.addEventListener("click", function () {
    <div id="albums">  
    <img src="${values.image}" alt=""> 
    <h3>${values.name} - ${values.artist}<h3>
-   <h4>${values.title} - ${values.year}</h4>
+   <h4>${values.year} </h4>
+   <h5>  ${values.title} </h5>
    <button type="button" class="btn" id="btnDelete">Delete</button>
    </div>
    `
@@ -69,9 +68,6 @@ DOMSelectors.create.addEventListener("click", function () {
    deleteAlbum();
 })
 
-
-
 DOMSelectors.clear.addEventListener("click", function () {
    DOMSelectors.albums.innerHTML = '';
 })
-
